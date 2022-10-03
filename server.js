@@ -1,8 +1,10 @@
-import { createServer } from '@graphql-yoga/node';
-import { schema } from './graphql/schema.js';
+import express from 'express';
+import { buildApp } from './app.js';
 
-const server = createServer({
-  schema,
+const app = express();
+
+buildApp(app);
+
+app.listen(4000, () => {
+  console.log('GraphQL API located at http://localhost:4000/graphql');
 });
-
-server.start();
