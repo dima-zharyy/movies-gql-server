@@ -1,0 +1,9 @@
+type Movie {
+  id: Int!
+  poster_path: String!
+  title: String!
+}
+
+type Query {
+  movies: [Movie]!
+}
