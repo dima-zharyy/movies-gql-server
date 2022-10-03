@@ -3,7 +3,7 @@
 export const typeDefs = `
 type Movie {
   id: Int!
-  poster_path: String!
+  poster_path: String
   title: String!
 }
 
@@ -15,14 +15,14 @@ type Genre {
 type Details {
   title: String!
   overview: String!
-  vote_average: Float!
-  genres: [Genre]!
-  poster_path: String!
+  vote_average: Float
+  genres: [Genre]
+  poster_path: String
 }
 
 type Credits {
   id: Int!
-  profile_path: String!
+  profile_path: String
   name: String!
   character: String!
 }
@@ -38,7 +38,7 @@ type Query {
   movies: [Movie]!
   searchMovies(query: String!): [Movie]!
   details(id: Int!): Details!
-  credits(id: Int!): [Credits]!
-  reviews(id: Int!): [Reviews]!
+  credits(id: Int!): [Credits]
+  reviews(id: Int!): [Reviews]
 }
 `;
