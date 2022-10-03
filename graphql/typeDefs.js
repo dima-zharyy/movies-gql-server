@@ -40,6 +40,5 @@ type Query {
   details(id: Int!): Details!
   credits(id: Int!): [Credits]!
   reviews(id: Int!): [Reviews]!
-  
 }
 `;
