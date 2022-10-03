@@ -1,10 +1,7 @@
-import express from 'express';
-import { buildApp } from './app.js';
+import { app } from './app.js';
 
-const app = express();
+const { PORT = 4000 } = process.env;
 
-buildApp(app);
-
-app.listen(4000, () => {
-  console.log('GraphQL API located at http://localhost:4000/graphql');
+app.listen(PORT, () => {
+  console.log(`GraphQL API located at http://localhost:${PORT}/graphql`);
 });
