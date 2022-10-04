@@ -29,9 +29,9 @@ type Credits {
 
 type Reviews {
   id: Int!
-  author: String!
-  updated_at: String!
-  content: String!
+  author: String
+  updated_at: String
+  content: String
 }
 
 type Query {
