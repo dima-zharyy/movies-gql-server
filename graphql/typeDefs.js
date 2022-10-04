@@ -28,7 +28,7 @@ type Credits {
 }
 
 type Reviews {
-  id: Int!
+  id: Int
   author: String
   updated_at: String
   content: String
