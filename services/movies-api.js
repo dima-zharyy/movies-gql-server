@@ -37,5 +37,5 @@ export const getReviews = async id => {
     `/movie/${id}/reviews?api_key=${apiKey}&language=en-US&page=1`
   );
 
-  return response.data;
+  return response.data.results;
 };
